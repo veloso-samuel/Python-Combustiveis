@@ -5,10 +5,9 @@ if programa == 1:
     valor_gasolina = float(input("digite valor da gasolina: "))
 
     melhor_opcao = valor_alcool / valor_gasolina
-    if melhor_opcao <= 0.7:
-        print("Abasteça com álcool")
-    else:
-        print("Abasteça com gasolina")
+    melhor_opcao = "Abasteça com álcool" if melhor_opcao <= 0.7 else "Abasteça com gasolina"
+    print(melhor_opcao)
+    
 elif programa == 2:
     distancia_viagem = float(input("Distância de Viagem em KM: "))
     preco_combustivel = float(input("Preço do combustível: "))
