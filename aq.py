@@ -1,4 +1,7 @@
-programa = int(input("Para cálculo gasolina vs Alcool digite 1, \nPara cálculo  de viagem digite 2. \n" ))
+programa = int(input("Para cálculo gasolina vs alcool digite 1, \nPara cálculo  de viagem digite 2. \n" ))
+
+while programa > 2 or programa < 1:
+        programa = int(input("Para cálculo gasolina vs Alcool digite 1, \nPara cálculo  de viagem digite 2. \n" ))
 
 if programa == 1:
     valor_alcool = float(input("digite valor do álcool: "))
@@ -18,6 +21,3 @@ elif programa == 2:
     custo_km = preco_combustivel / km_litro
     
     print(f"O custo da viagem será: R${custo_viagem} \nMédia de R${custo_km} por litro")
-
-else:
-    print("Erro, Digite 1 ou 2.")
